@@ -1,0 +1,26 @@
+{
+  "env": {
+    "commonjs": {
+      "plugins": [ 
+        "@babel/plugin-proposal-export-default-from" 
+      ],
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": { 
+              "node": "current" 
+            } 
+          }
+        ]
+      ],
+      "sourceType": "module"
+    },
+    "esmodules": {
+      "plugins": [],
+      "presets": [],
+      "retainLines": true,
+      "sourceType": "module"
+    }
+  }
+}
