@@ -16,7 +16,7 @@
       ],
       "sourceType": "module"
     },
-    "esmodules": {
+    "esmodule": {
       "plugins": [],
       "presets": [],
       "retainLines": true,
