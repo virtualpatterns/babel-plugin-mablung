@@ -27,7 +27,8 @@
     ".": "./distributable/index.cjs",
     "./plugin": "./distributable/library/plugin.cjs",
     "./visitor": "./distributable/library/visitor.cjs",
-    "./visitor-error": "./distributable/library/error/visitor-error.cjs"
+    "./visitor-error": "./distributable/library/error/visitor-error.cjs",
+    "./package.json": "./package.json"
   },
   "license": "GPL-3.0+",
   "main": "distributable/index.cjs",
