@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "lint": "check-dependencyX"
+  },
+  "version": "0.0.1-2",
+  "devDependencies": {
+    "@virtualpatterns/mablung-check-dependency": "file:../../../../mablung-check-dependency"
+  }
+}

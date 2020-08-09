@@ -1,6 +1,6 @@
-import DefaultChangeCase, * as ModuleChangeCase from 'change-case'
+import * as ChangeCase from 'change-case'
 
-const { pascalCase: PascalCase } = DefaultChangeCase || ModuleChangeCase
+const { pascalCase: PascalCase } = ChangeCase
 
 class Plugin {
 

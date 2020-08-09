@@ -10,7 +10,7 @@
       "name": "Launch ...",
       "internalConsoleOptions": "openOnSessionStart",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/distributable/sandbox/parser.js",
+      "program": "${workspaceFolder}/distributable/sandbox/cc.cjs",
       "runtimeArgs": [ "--experimental-import-meta-resolve" ],
       "skipFiles": [ "<node_internals>/**" ]
     },
