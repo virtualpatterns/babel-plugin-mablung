@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Plugin = void 0;
 
-var ModuleChangeCase = _interopRequireWildcard(require("change-case"));
+var ChangeCase = _interopRequireWildcard(require("change-case"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -13,7 +13,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 const {
   pascalCase: PascalCase
-} = ModuleChangeCase.default || ModuleChangeCase;
+} = ChangeCase;
 
 class Plugin {
   static createPlugin(visitorClass) {
