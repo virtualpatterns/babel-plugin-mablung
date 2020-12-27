@@ -21,11 +21,9 @@ class Plugin {
     return function (babel) {
       // console.log(`Plugin.createPlugin(${visitorClass.name})(babel)`)
       let visitorInstance = new visitorClass(babel);
-      let pluginObject = {};
-
-      pluginObject.manipulateOptions = function (option, parserOption) {
-        console.dir(parserOption);
-      };
+      let pluginObject = {}; // pluginObject.manipulateOptions = function(option, parserOption) {
+      //   console.dir(parserOption)
+      // }
 
       pluginObject.pre = function (state) {
         visitorInstance.onBeforeNode(state);
