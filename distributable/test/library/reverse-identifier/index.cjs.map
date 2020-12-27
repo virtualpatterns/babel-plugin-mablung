@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../source/test/library/reverse-identifier/index.cjs"],"names":["Plugin","createPlugin","Visitor"],"mappings":";;;;;;;AAAA;;AAEA;;eAEeA,eAAOC,YAAP,CAAoBC,gBAApB,C","sourcesContent":["import { Plugin } from '../../../library/plugin.cjs'\n\nimport { Visitor } from './visitor.cjs'\n\nexport default Plugin.createPlugin(Visitor)\n"],"file":"index.cjs"}
