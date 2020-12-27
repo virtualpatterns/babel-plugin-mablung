@@ -14,9 +14,9 @@ class Plugin {
 
       let pluginObject = {}
 
-      pluginObject.manipulateOptions = function(option, parserOption) {
-        console.dir(parserOption)
-      }
+      // pluginObject.manipulateOptions = function(option, parserOption) {
+      //   console.dir(parserOption)
+      // }
 
       pluginObject.pre = function(state) { visitorInstance.onBeforeNode(state) }
       pluginObject.post = function(state) { visitorInstance.onAfterNode(state) }
