@@ -4,7 +4,7 @@ import Test from 'ava';
 
 const Require = CreateRequire(import.meta.url);
 
-Test.only('plugins: [ reverse-identifier ]', async test => {
+Test('plugins: [ reverse-identifier ]', async test => {
 
   let codeIn = 'console.log(\'Hello, world!\')';
   let option = {
