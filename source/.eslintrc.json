@@ -11,7 +11,7 @@
     "__filePath": "readonly",
     "__require": "readonly"
   },
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "requireConfigFile": true,
     "sourceType": "module"
