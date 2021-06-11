@@ -23,4 +23,5 @@ class Visitor extends _visitor.Visitor {
 }
 
 exports.Visitor = Visitor;
+
 //# sourceMappingURL=visitor.cjs.map

@@ -30,4 +30,5 @@ class Visitor {
 }
 
 exports.Visitor = Visitor;
+
 //# sourceMappingURL=visitor.cjs.map

@@ -4,7 +4,7 @@ import Test from 'ava';
 
 const Require = CreateRequire(import.meta.url);
 
-Test('plugins: [ reverse-identifier ]', async test => {
+Test('plugins: [ reverse-identifier ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')';
   let option = {
@@ -21,7 +21,7 @@ Test('plugins: [ reverse-identifier ]', async test => {
 
 });
 
-Test('plugins: [ reverse-identifier-on-enter ]', async test => {
+Test('plugins: [ reverse-identifier-on-enter ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')';
   let option = {
@@ -38,7 +38,7 @@ Test('plugins: [ reverse-identifier-on-enter ]', async test => {
 
 });
 
-Test('plugins: [ reverse-identifier-on-exit ]', async test => {
+Test('plugins: [ reverse-identifier-on-exit ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')';
   let option = {
@@ -54,4 +54,5 @@ Test('plugins: [ reverse-identifier-on-exit ]', async test => {
   test.is(actualCodeOut, expectedCodeOut);
 
 });
+
 //# sourceMappingURL=visitor.test.js.map

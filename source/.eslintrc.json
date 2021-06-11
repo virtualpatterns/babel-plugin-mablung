@@ -7,17 +7,21 @@
   "extends": [
     "eslint:recommended"
   ],
-  "globals": {
-    "__filePath": "readonly",
-    "__require": "readonly"
-  },
+  "globals": {},
   "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "requireConfigFile": true,
+    "babelOptions": {
+      "parserOpts": {
+        "plugins": [
+          "exportDefaultFrom"
+        ]
+      }
+    },
+    "requireConfigFile": false,
     "sourceType": "module"
   },
   "plugins": [
-    "babel"
+    "eslint-plugin-babel"
   ],
   "rules": {
     "arrow-parens": "error",

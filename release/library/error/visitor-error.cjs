@@ -13,4 +13,5 @@ class VisitorError extends Error {
 }
 
 exports.VisitorError = VisitorError;
+
 //# sourceMappingURL=visitor-error.cjs.map
