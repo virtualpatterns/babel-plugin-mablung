@@ -16,7 +16,9 @@ class Visitor extends _visitor.Visitor {
     return ['Identifier'];
   }
 
-  onExitIdentifierNode(path, state) {
+  onExitIdentifierNode(path
+  /*, state*/
+  ) {
     path.node.name = path.node.name.split('').reverse().join('');
   }
 
