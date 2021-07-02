@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../source/test/library/reverse-identifier-on-enter/index.cjs"],"names":[],"mappings":";;;;;;;AAAA;;AACA;;eAEe,eAAO,YAAP,CAAoB,gBAApB,C","file":"index.cjs","sourcesContent":["import { Plugin } from '../../../library/plugin.cjs'\nimport { Visitor } from './visitor.cjs'\n\nexport default Plugin.createPlugin(Visitor)\n"]}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../source/sandbox/cd.cjs"],"names":[],"mappings":";;AACA,OAAO,CAAC,GAAR,CAAY,OAAO,CAAC,OAAR,CAAgB,wDAAhB,CAAZ","file":"cd.cjs","sourcesContent":["\nconsole.log(require.resolve('@virtualpatterns/mablung-check-dependency/package.json'))"]}

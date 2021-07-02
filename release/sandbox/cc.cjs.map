@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../source/sandbox/cc.cjs"],"names":[],"mappings":";;AAAA;;;;;;AACA,MAAM;AAAE,EAAA,UAAU,EAAE;AAAd,IAA6B,gBAAnC;AACA,S,CAEA;AACA","file":"cc.cjs","sourcesContent":["import DefaultChangeCase, * as ModuleChangeCase from 'change-case'\nconst { pascalCase: PascalCase } = ModuleChangeCase\ndebugger\n\n// use default for js\n// use module for cjs"]}
