@@ -5,5 +5,12 @@ endif
 
 include $(mablung-makefile-path)
 
-$(project-path)/release/%.cjs: babel-flag += --env-name commonjs --keep-file-extension
-$(project-path)/release/%.js: babel-flag += --env-name esmodule --keep-file-extension
+$(project-path)/release/%.cjs: babel-parameter := --env-name commonjs --keep-file-extension
+$(project-path)/release/%.js: babel-parameter := --env-name esmodule --keep-file-extension
+
+export project-name := $(notdir $(project-path))
+
+test::
+	@npx mkdir -p ../Shared/$(project-name)
+	@npx shx rm -Rf ../Shared/$(project-name)/coverage
+	@npx shx cp -R coverage ../Shared/$(project-name)
