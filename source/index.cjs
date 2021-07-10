@@ -1,3 +1,3 @@
-/*eslint no-unused-vars: [ "off" ]*/
-const nil = null
+const OK = true
+export { OK }
 export default from './library/index.cjs'
