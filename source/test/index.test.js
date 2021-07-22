@@ -5,8 +5,8 @@ Test.before(async (test) => {
 })
 
 ;[
-  'OK',
-  'default'
+  'default',
+  'OK'
 ].forEach((name) => {
 
   Test(name, async (test) => {
