@@ -89,9 +89,9 @@
     "@babel/preset-env": "^7.14.8",
     "@virtualpatterns/babel-preset-mablung-makefile": "0.0.1-1",
     "@virtualpatterns/eslint-config-mablung-makefile": "0.0.1-12",
-    "@virtualpatterns/mablung-check-dependency": "0.0.1-62",
-    "@virtualpatterns/mablung-makefile": "0.0.1-88",
-    "@virtualpatterns/mablung-source-map-support": "0.0.2-64",
+    "@virtualpatterns/mablung-check-dependency": "0.0.1-63",
+    "@virtualpatterns/mablung-makefile": "0.0.1-93",
+    "@virtualpatterns/mablung-source-map-support": "0.0.2-67",
     "ava": "^3.15.0"
   }
 }
