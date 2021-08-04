@@ -1,3 +1,6 @@
+import Plugin from './library/index.cjs'
+
 const OK = true
-export default from './library/index.cjs'
+
+export default Plugin 
 export { OK }
