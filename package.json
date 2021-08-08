@@ -3,7 +3,7 @@
   "ava": {
     "failFast": true,
     "files": [
-      "release/test/**/*.test.*"
+      "release/test/**/*.test.js"
     ],
     "nodeArguments": [
       "--no-warnings",
@@ -21,8 +21,8 @@
         {
           "header": {
             "exclude": [
-              "source/test/**/*",
-              "source/index.cjs"
+              "source/sandbox/**/*",
+              "source/test/**/*"
             ]
           }
         }
@@ -52,18 +52,18 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "/release/library",
-    "/release/index.cjs"
+    "release/library",
+    "release/index.cjs"
   ],
   "license": "GPL-3.0+",
   "main": "release/index.cjs",
-  "name": "@virtualpatterns/mablung-babel-plugin",
+  "name": "@virtualpatterns/babel-plugin-mablung",
   "repository": {
     "type": "git",
-    "url": "https://github.com/virtualpatterns/mablung-babel-plugin"
+    "url": "https://github.com/virtualpatterns/babel-plugin-mablung"
   },
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.1-0",
   "dependencies": {
     "change-case": "^4.1.2"
   },
