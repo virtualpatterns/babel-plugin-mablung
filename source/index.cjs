@@ -1,6 +1,4 @@
-import Plugin from './library/index.cjs'
+const { CreatePlugin } = require('./library/create-plugin.cjs')
+const { Visitor } = require('./library/visitor.cjs')
 
-const OK = true
-
-export default Plugin 
-export { OK }
+module.exports = CreatePlugin(Visitor)

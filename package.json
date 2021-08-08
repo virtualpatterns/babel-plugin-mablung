@@ -16,7 +16,17 @@
   },
   "babel": {
     "presets": [
-      "@virtualpatterns/babel-preset-mablung-makefile"
+      [
+        "@virtualpatterns/babel-preset-mablung-makefile",
+        {
+          "header": {
+            "exclude": [
+              "source/test/**/*",
+              "source/index.cjs"
+            ]
+          }
+        }
+      ]
     ]
   },
   "c8": {
@@ -32,20 +42,11 @@
   },
   "description": "TBD",
   "eslintConfig": {
-    "extends": "@virtualpatterns/eslint-config-mablung-makefile",
-    "parserOptions": {
-      "babelOptions": {
-        "parserOpts": {
-          "plugins": [
-            "exportDefaultFrom"
-          ]
-        }
-      }
-    }
+    "extends": "@virtualpatterns/eslint-config-mablung-makefile"
   },
   "exports": {
     ".": "./release/index.cjs",
-    "./plugin": "./release/library/plugin.cjs",
+    "./create-plugin": "./release/library/create-plugin.cjs",
     "./visitor": "./release/library/visitor.cjs",
     "./visitor-error": "./release/library/error/visitor-error.cjs",
     "./package.json": "./package.json"
@@ -67,12 +68,12 @@
     "change-case": "^4.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@virtualpatterns/babel-preset-mablung-makefile": "0.0.3",
-    "@virtualpatterns/eslint-config-mablung-makefile": "0.0.3",
-    "@virtualpatterns/mablung-check-dependency": "0.0.1",
-    "@virtualpatterns/mablung-makefile": "0.0.11",
-    "@virtualpatterns/mablung-source-map-support": "0.0.4",
+    "@babel/core": "^7.15.0",
+    "@virtualpatterns/babel-preset-mablung-makefile": "0.0.9",
+    "@virtualpatterns/eslint-config-mablung-makefile": "0.0.7",
+    "@virtualpatterns/mablung-check-dependency": "0.0.3",
+    "@virtualpatterns/mablung-makefile": "0.0.18",
+    "@virtualpatterns/mablung-source-map-support": "0.0.6",
     "ava": "^3.15.0"
   }
 }
