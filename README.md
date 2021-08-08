@@ -1,2 +1,2 @@
-# mablung-babel-plugin
+# babel-plugin-mablung
 TBD
