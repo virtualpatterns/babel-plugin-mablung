@@ -40,7 +40,7 @@
     ],
     "src": "release"
   },
-  "description": "TBD",
+  "description": "Implements a basic babel plugin for other projects to derive",
   "eslintConfig": {
     "extends": "@virtualpatterns/eslint-config-mablung-makefile"
   },
