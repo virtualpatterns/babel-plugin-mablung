@@ -1,6 +1,4 @@
-import * as ChangeCase from 'change-case'
-
-const { pascalCase: PascalCase } = ChangeCase
+import { pascalCase as PascalCase } from 'change-case'
 
 export function CreatePlugin(visitorClass) {
   // console.log(`CreatePlugin(${visitorClass.name})`)
