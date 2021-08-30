@@ -4,15 +4,15 @@ import Path from 'path'
 import Test from 'ava'
 import URL from 'url'
 
-const FilePath = URL.fileURLToPath(import.meta.url)
-const FolderPath = Path.dirname(FilePath)
 const Require = CreateRequire(import.meta.url)
+const SourceFilePath = URL.fileURLToPath(import.meta.url).replace('release/', 'source/')
+const SourceFolderPath = Path.dirname(SourceFilePath).replace('release/', 'source/')
 
-Test('plugins: [ reverse-identifier ]', async (test) => {
+Test('plugins: [ reverse-identifier/index.cjs ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')'
   let option = { 
-    'root': FolderPath,
+    'root': SourceFolderPath,
     'plugins': [ 
       Require.resolve('./reverse-identifier/index.cjs')
     ]
@@ -26,11 +26,11 @@ Test('plugins: [ reverse-identifier ]', async (test) => {
 
 })
 
-Test('plugins: [ reverse-identifier-on-enter ]', async (test) => {
+Test('plugins: [ reverse-identifier-on-enter/index.cjs ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')'
   let option = { 
-    'root': FolderPath,
+    'root': SourceFolderPath,
     'plugins': [ 
       Require.resolve('./reverse-identifier-on-enter/index.cjs')
     ]
@@ -44,11 +44,11 @@ Test('plugins: [ reverse-identifier-on-enter ]', async (test) => {
 
 })
 
-Test('plugins: [ reverse-identifier-on-exit ]', async (test) => {
+Test('plugins: [ reverse-identifier-on-exit/index.cjs ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')'
   let option = { 
-    'root': FolderPath,
+    'root': SourceFolderPath,
     'plugins': [ 
       Require.resolve('./reverse-identifier-on-exit/index.cjs')
     ]

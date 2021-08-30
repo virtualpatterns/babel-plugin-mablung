@@ -4,15 +4,15 @@ import Path from 'path'
 import Test from 'ava'
 import URL from 'url'
 
-const FilePath = URL.fileURLToPath(import.meta.url)
-const FolderPath = Path.dirname(FilePath)
 const Require = CreateRequire(import.meta.url)
+const SourceFilePath = URL.fileURLToPath(import.meta.url).replace('release/', 'source/')
+const SourceFolderPath = Path.dirname(SourceFilePath).replace('release/', 'source/')
 
 Test('plugins: [ index.cjs ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')'
   let option = {
-    'root': FolderPath,
+    'root': SourceFolderPath,
     'plugins': [
       Require.resolve('../index.cjs')
     ]
