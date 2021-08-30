@@ -10,7 +10,7 @@ class Visitor extends BaseVisitor {
     return [ 'Identifier' ]
   }
 
-  onExitIdentifierNode(path/*, state*/) {
+  onExitIdentifierNode(path/*, state */) {
     path.node.name = path.node.name.split('').reverse().join('')
   }
 
