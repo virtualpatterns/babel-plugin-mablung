@@ -8,13 +8,13 @@ const Require = CreateRequire(import.meta.url)
 const SourceFilePath = URL.fileURLToPath(import.meta.url).replace('release/', 'source/')
 const SourceFolderPath = Path.dirname(SourceFilePath).replace('release/', 'source/')
 
-Test('plugins: [ index.cjs ]', async (test) => {
+Test('plugins: [ @virtualpatterns/babel-plugin-mablung ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')'
   let option = {
     'root': SourceFolderPath,
     'plugins': [
-      Require.resolve('../index.cjs')
+      Require.resolve('@virtualpatterns/babel-plugin-mablung')
     ]
   }
 
@@ -24,4 +24,16 @@ Test('plugins: [ index.cjs ]', async (test) => {
   // test.log(actualCodeOut)
   test.is(actualCodeOut, expectedCodeOut)
 
+})
+
+Test('@virtualpatterns/babel-plugin-mablung/create-plugin', async (test) => {
+  test.truthy((await import(test.title)).CreatePlugin)
+})
+
+Test('@virtualpatterns/babel-plugin-mablung/visitor', async (test) => {
+  test.truthy((await import(test.title)).Visitor)
+})
+
+Test('@virtualpatterns/babel-plugin-mablung/visitor-error', async (test) => {
+  test.truthy((await import(test.title)).VisitorError)
 })

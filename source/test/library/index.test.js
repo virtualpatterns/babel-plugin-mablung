@@ -8,7 +8,7 @@ const Require = CreateRequire(import.meta.url)
 const SourceFilePath = URL.fileURLToPath(import.meta.url).replace('release/', 'source/')
 const SourceFolderPath = Path.dirname(SourceFilePath).replace('release/', 'source/')
 
-Test('plugins: [ reverse-identifier/index.cjs ]', async (test) => {
+Test('plugins: [ reverse-identifier ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')'
   let option = { 
@@ -26,7 +26,7 @@ Test('plugins: [ reverse-identifier/index.cjs ]', async (test) => {
 
 })
 
-Test('plugins: [ reverse-identifier-on-enter/index.cjs ]', async (test) => {
+Test('plugins: [ reverse-identifier-on-enter ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')'
   let option = { 
@@ -44,7 +44,7 @@ Test('plugins: [ reverse-identifier-on-enter/index.cjs ]', async (test) => {
 
 })
 
-Test('plugins: [ reverse-identifier-on-exit/index.cjs ]', async (test) => {
+Test('plugins: [ reverse-identifier-on-exit ]', async (test) => {
 
   let codeIn = 'console.log(\'Hello, world!\')'
   let option = { 
