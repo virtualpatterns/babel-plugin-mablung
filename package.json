@@ -18,7 +18,7 @@
     "url": "https://github.com/virtualpatterns/babel-plugin-mablung"
   },
   "type": "module",
-  "version": "0.0.26-19",
+  "version": "0.0.26-20",
   "dependencies": {
     "change-case": "^4.1.2"
   },
