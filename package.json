@@ -5,7 +5,6 @@
     ".": "./release/index.cjs",
     "./create-plugin": "./release/library/create-plugin.cjs",
     "./visitor": "./release/library/visitor.cjs",
-    "./visitor-error": "./release/library/error/visitor-error.cjs",
     "./package.json": "./package.json"
   },
   "files": [
