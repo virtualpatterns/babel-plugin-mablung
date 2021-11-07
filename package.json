@@ -2,10 +2,8 @@
   "author": "virtualpatterns.com <code@virtualpatterns.com> (http://www.virtualpatterns.com)",
   "description": "TBD",
   "exports": {
-    ".": "./release/index.cjs",
-    "./create-plugin": "./release/library/create-plugin.cjs",
-    "./visitor": "./release/library/visitor.cjs",
-    "./visitor-error": "./release/library/error/visitor-error.cjs",
+    ".": "./release/plugin.cjs",
+    "./index": "./release/index.cjs",
     "./package.json": "./package.json"
   },
   "files": [

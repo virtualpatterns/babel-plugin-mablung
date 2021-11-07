@@ -26,14 +26,24 @@ Test('plugins: [ @virtualpatterns/babel-plugin-mablung ]', async (test) => {
 
 })
 
-Test('@virtualpatterns/babel-plugin-mablung/create-plugin', async (test) => {
-  test.truthy((await import(test.title)).CreatePlugin)
+Test('@virtualpatterns/babel-plugin-mablung/index', async (test) => {
+
+  let index = await import('@virtualpatterns/babel-plugin-mablung/index')
+
+  test.truthy(index.CreatePlugin)
+  test.truthy(index.Visitor)
+  test.truthy(index.VisitorError)
+
 })
 
-Test('@virtualpatterns/babel-plugin-mablung/visitor', async (test) => {
-  test.truthy((await import(test.title)).Visitor)
-})
+// Test('@virtualpatterns/babel-plugin-mablung/create-plugin', async (test) => {
+//   test.truthy((await import(test.title)).CreatePlugin)
+// })
 
-Test('@virtualpatterns/babel-plugin-mablung/visitor-error', async (test) => {
-  test.truthy((await import(test.title)).VisitorError)
-})
+// Test('@virtualpatterns/babel-plugin-mablung/visitor', async (test) => {
+//   test.truthy((await import(test.title)).Visitor)
+// })
+
+// Test('@virtualpatterns/babel-plugin-mablung/visitor-error', async (test) => {
+//   test.truthy((await import(test.title)).VisitorError)
+// })

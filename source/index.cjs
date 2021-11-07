@@ -1,4 +1,4 @@
-const { CreatePlugin } = require('./library/create-plugin.cjs')
-const { Visitor } = require('./library/visitor.cjs')
+export * from './library/create-plugin.cjs'
+export * from './library/visitor.cjs'
 
-module.exports = CreatePlugin(Visitor)
+export * from './library/error/visitor-error.cjs'
