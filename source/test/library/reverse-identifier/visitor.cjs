@@ -1,4 +1,4 @@
-import { Visitor as BaseVisitor } from '../../../library/visitor.cjs'
+import { Visitor as BaseVisitor } from '@virtualpatterns/babel-plugin-mablung/visitor'
 
 class Visitor extends BaseVisitor {
 
