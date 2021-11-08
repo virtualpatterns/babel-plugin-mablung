@@ -8,7 +8,8 @@
   },
   "files": [
     "release/library",
-    "release/index.cjs"
+    "release/index.cjs",
+    "release/plugin.cjs"
   ],
   "license": "GPL-3.0+",
   "main": "release/index.cjs",
