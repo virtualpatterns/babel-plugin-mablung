@@ -1,4 +1,4 @@
-import { VisitorError } from '@virtualpatterns/babel-plugin-mablung/index'
+import { VisitorError } from '@virtualpatterns/babel-plugin-mablung'
 import Test from 'ava'
 
 Test('VisitorError', (test) => {

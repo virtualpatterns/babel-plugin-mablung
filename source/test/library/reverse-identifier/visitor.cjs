@@ -1,4 +1,4 @@
-import { Visitor as BaseVisitor } from '@virtualpatterns/babel-plugin-mablung/index'
+import { Visitor as BaseVisitor } from '@virtualpatterns/babel-plugin-mablung'
 
 class Visitor extends BaseVisitor {
 

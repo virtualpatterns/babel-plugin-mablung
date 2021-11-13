@@ -1,4 +1,4 @@
-import { CreatePlugin } from '@virtualpatterns/babel-plugin-mablung/index'
+import { CreatePlugin } from '@virtualpatterns/babel-plugin-mablung'
 
 import { Visitor } from './visitor.cjs'
 
