@@ -1,10 +1,11 @@
-import { createRequire as CreateRequire } from 'module'
 import Babel from '@babel/core'
 import Path from 'path'
 import Test from 'ava'
 import URL from 'url'
 
-const Require = CreateRequire(import.meta.url)
+const FilePath = URL.fileURLToPath(import.meta.url)
+const FolderPath = Path.dirname(FilePath)
+
 const SourceFilePath = URL.fileURLToPath(import.meta.url).replace('/release/', '/source/')
 const SourceFolderPath = Path.dirname(SourceFilePath)
 
@@ -14,7 +15,7 @@ Test('plugins: [ reverse-identifier ]', async (test) => {
   let option = { 
     'root': SourceFolderPath,
     'plugins': [ 
-      Require.resolve('./reverse-identifier/index.cjs')
+      Path.resolve(FolderPath, 'reverse-identifier/index.cjs')
     ]
   }
 
@@ -32,7 +33,7 @@ Test('plugins: [ reverse-identifier-on-enter ]', async (test) => {
   let option = { 
     'root': SourceFolderPath,
     'plugins': [ 
-      Require.resolve('./reverse-identifier-on-enter/index.cjs')
+      Path.resolve(FolderPath, 'reverse-identifier-on-enter/index.cjs')
     ]
   }
 
@@ -50,7 +51,7 @@ Test('plugins: [ reverse-identifier-on-exit ]', async (test) => {
   let option = { 
     'root': SourceFolderPath,
     'plugins': [ 
-      Require.resolve('./reverse-identifier-on-exit/index.cjs')
+      Path.resolve(FolderPath, 'reverse-identifier-on-exit/index.cjs')
     ]
   }
 
