@@ -22,11 +22,11 @@
     "change-case": "^4.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.0",
-    "@virtualpatterns/babel-preset-mablung-makefile": "0.0.26-99",
-    "@virtualpatterns/eslint-config-mablung-makefile": "0.0.26-94",
-    "@virtualpatterns/mablung-check-dependency": "0.0.26-68",
-    "@virtualpatterns/mablung-makefile": "0.0.26-219",
+    "@babel/core": "^7.17.2",
+    "@virtualpatterns/babel-preset-mablung-makefile": "0.0.26-105",
+    "@virtualpatterns/eslint-config-mablung-makefile": "0.0.26-100",
+    "@virtualpatterns/mablung-check-dependency": "0.0.26-72",
+    "@virtualpatterns/mablung-makefile": "0.0.26-228",
     "ava": "^4.0.1"
   }
 }
